@@ -1,0 +1,6 @@
+<h2>Kmom02</h2>
+<p>I Kmom02 har jag utökat min me-sida och byggt på den. Nu börjar sidan ha en tydlig struktur och korrekta HTML-element.</p>
+<p>Jag skulle säga att jag är betydligt mer bekväm och erfaren med CSS, då jag primärt arbetat i WordPress de senaste åren. Eftersom att elementen i de WordPress-sidor jag byggt redan finns har jag bara behövt arbeta med PHP och CSS för att styla om dem. Det som var mest ovant var att använda de nya element som är nya för HTML5 (main och article t.ex.). I gymnasiet jobbade jag mer div istället.</p>
+<p>I kursen webbserverprogrammering 1 på gymnasiet fick vi hålla på ganska mycket med PHP. Där tyckte jag det var väldigt intressant med databasdrivna webbapplikationer. När jag sedan började med WordPress fördjupades mitt intresse. Jag tycker att det är kul att utveckla med PHP men att dokumentation ibland är lite svårtolkad, även om den är informativ.</p>
+<p>PHP-labben för Kmom02 var inga konstigheter för min del. Många av uppgifterna i labben liknande de uppgifter jag haft under gymnasiet men repetitionen var nyttig. Man hinner glömma mycket på ett par år.</p>
+<p>Kmom02:s TIL för mig är användandet av HTML-elementen "main" och "article" och hur de strukturerar hemsidan. Det var även upplysande med läsningen om hur clearfix fungerar. Jag har avänt mig av det tidigare men inte förstått hur det fungerar riktigt.</p>

@@ -1,0 +1,6 @@
+<h2>Kmom03</h2>
+<p>Det är först nu på Kmom03 som jag tycker att saker och ting börjar bli lite utmanande men även roligare. I gymnasiet fick vi pröva på att använda arrayer i PHP men egentligen bara väldigt grundligt. Detta kursmoment har lärt mig väldigt mycket nytt om hur man strukturerar upp arrayer och hur de kan användas. Konceptet är bekant men jag har lärt mig väldigt mycket nytt under detta kursmoment.</p>
+<p>Introduktionen av sidkontroller, multisidor och template-filer känns kanon, om något lite mer avancerat än vad man är bekväm vid sedan tidigare.</p>
+<p>Me-sidan börjar utvecklas till en ordentlig hemsida nu. Det känns proffsigt att använda sig av PHP-kod för att sköta sidnavigeringen och att t.ex. använda querysträngar. Templatefiler gör att det faktiskt känns som att man kan bygga en större sida effektivt i denna struktur.</p>
+<p>Jag har behövt läsa igenom de tidigare länkade guiderna ordentligt nu, till skillnad från tidigare kursmoment. Det känns väldigt kul då man lär sig väldigt mycket nytt. Jag börjar även tycka att det är enklare att navigera och hitta hjälp på php.net.</p>
+<p>Den största TIL:en för detta kursmoment är hur arrayer verkligen funkar och hur man kan använda dem konkret. Tidigare har det varit väldigt abstrakt men nu känns det äntligen som att saker och ting faller på plats.</p>

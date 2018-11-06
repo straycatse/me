@@ -1,0 +1,2 @@
+<?php
+sessionDestroy($_SESSION);

@@ -1,0 +1,167 @@
+html {
+    background-color: #edede1;
+    overflow-y: scroll;
+    font-family: sans-serif;
+}
+
+.me {
+    width: 400px;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    background-color: #e9e8e4;
+    border-radius: 10px;
+}
+
+@media (max-width: 980px) {
+    body {
+        width: auto;
+    }
+}
+
+main {
+    min-height: 30em;
+    overflow: auto;
+}
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+article .subpage {
+    width: 70%;
+    float: right;
+    margin: 0%;
+}
+
+/* for all values */
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #285562;
+}
+
+/* visited link */
+a:visited {
+    color: #285562;
+}
+
+/* mouse over link */
+a:hover {
+    color: #e8edd6;
+    background-color: #fe7b33;
+    border: 1px solid #fe7b33;
+}
+
+/* selected link */
+a:active {
+    color: #00f;
+}
+
+.site-header {
+    background-color: #e9e8e4;
+    overflow: auto; /* clear fix to make div span all elements */
+}
+
+.site-header img {
+    float: left;
+    width: 60%;
+}
+
+.site-title {
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 32px;
+    overflow: auto;
+}
+
+.site-slogan {
+    display: block;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.site-chooser {
+    display: block;
+    margin-top: 140px;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.site-chooser select {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='75px' height='75px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
+    background-position: right 5px top 15px;
+    background-size: 18px 18px;
+    padding: 12px;
+    padding-right: 25px;
+    width: auto;
+    color: #285562;
+    text-align: center;
+    border: 1px solid #285562;
+    outline: 0;
+}
+
+#site-footer {
+    text-align: center;
+}
+
+.navbar {
+    padding: 1em;
+    background-color: #e9e8e4;
+    border-top: 5px dashed #285562;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #285562;
+    border: 1px solid #285562;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar .selected,
+li .selected {
+    color: #e8edd6;
+    background-color: #fe7b33;
+    border: 1px solid #fe7b33;
+}
+
+article {
+    overflow: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.figure-left {
+    float: left;
+    width: 100px;
+}
+
+.figure {
+    display: table;
+    table-layout: fixed;
+}
+
+.byline {
+    border: 5px #285562 dashed;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+.byline p {
+    width: auto;
+}

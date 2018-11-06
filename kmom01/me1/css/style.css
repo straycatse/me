@@ -1,0 +1,91 @@
+html {
+    background-color: #d7bba8;
+}
+
+.me {
+    width: 400px;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.site-header {
+    background-color: #eee;
+    overflow: auto; /* clear fix to make div span all elements */
+}
+
+.site-header img {
+    float: left;
+    width: 60%;
+}
+
+.site-title {
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 32px;
+    overflow: auto;
+}
+
+.site-slogan {
+    display: block;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.navbar {
+    padding: 1em;
+    background-color: #eee;
+    border-top: 1px solid #d7bba8;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #000;
+    border: 1px solid #d7bba8;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #000;
+    background-color: #d7bba8;
+}
+
+.container {
+    overflow: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.figure-left {
+    float: left;
+    width: 100px;
+}
+
+.figure {
+    display: table;
+    table-layout: fixed;
+}
+
+.byline {
+    border: 1px #d7bba8 solid;
+    overflow: auto;
+    margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.byline p {
+    width: auto;
+}

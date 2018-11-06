@@ -1,0 +1,111 @@
+
+/**
+ * Use border-box to inlude padding and border in item width.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    max-width: 100%;
+}
+
+.site-header {
+    background-color: #dbfcff;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+    border-bottom: solid 3px #ce7b91;
+}
+
+/**
+ * Style the navbar
+ */
+.navbar {
+    width: 25%;
+    float: right;
+    list-style-type: none;
+}
+
+.navbar .selected,
+aside .selected {
+    font-weight: bold;
+    color: #000;
+}
+
+.logo-div {
+    width: 25%;
+    display: inline;
+}
+
+/**
+ * Style for page controller multipage
+ */
+.wrap-main {
+    background-color: #dbfcff;
+    overflow: auto;
+    border: 1px solid #dbfcff;
+    min-height: 80vh;
+}
+
+main {
+    width: 80%;
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-left: 10em;
+    padding-right: 10em;
+
+    /* background-color: hsl(133, 100%, 86%); */
+
+    /* border: 10px solid hsl(133, 100%, 76%); */
+}
+
+article {
+    border-top: solid 3px #ce7b91;
+    margin-bottom: 30px;
+    padding-top: 1em;
+}
+
+article:first-child {
+    border-top: none;
+}
+
+.objArt,
+.objArt:first-child {
+    width: 50%;
+    min-height: 30em;
+    border-top: solid 3px #ce7b91;
+    float: left;
+}
+
+pre {
+    /* white-space: pre-wrap; */
+}
+
+aside {
+    padding-top: 30px;
+    width: 20%;
+    float: left;
+
+    /* background-color: hsl(206, 100%, 86%); */
+
+    /* border: 10px solid hsl(206, 100%, 76%); */
+}
+
+.sitefooter {
+    padding: 1%;
+    float: clear-both;
+    text-align: center;
+
+    /* border: 10px solid #ffdfba; */
+    background-color: #dbfcff;
+    color: #000;
+    border-top: solid 3px #ce7b91;
+}
+
+h1 {
+    /* border-bottom: 1px solid #999; */
+}

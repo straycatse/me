@@ -1,0 +1,58 @@
+{
+    "details": "Generated for siso18 at 2018-10-11 17:39:03.",
+    "key": "650853257f9bb2c027392a74db357011",
+    "summary": {
+        "questions": 15,
+        "points": 19,
+        "pass": 13,
+        "passdistinct": 19
+    },
+    "points": {
+        "1.1": 1,
+        "1.2": 1,
+        "1.3": 1,
+        "2.1": 1,
+        "2.2": 1,
+        "3.1": 1,
+        "4.1": 1,
+        "4.2": 1,
+        "4.3": 1,
+        "4.4": 1,
+        "5.1": 1,
+        "5.2": 1,
+        "5.3": 1,
+        "6.1": 3,
+        "6.2": 3
+    },
+    "answers": {
+        "1.1": "1999-01-05",
+        "1.2": "1999-04-05",
+        "1.3": "09:10:32",
+        "2.1": "And that was how a great scandal threatened to affect the kingdom\nof Bohemia, and how the best plans of Mr. Sherlock Holmes were\nbeaten by a woman's wit. He used to make merry over the\ncleverness of women, but I have not heard him do it of late. And\nwhen he speaks of Irene Adler, or when he refers to her\nphotograph, it is always under the honourable title of the woman.",
+        "2.2": " a great scandal threaten",
+        "3.1": [
+            "No matter how har I try, I never seen to run out of bad ideas.",
+            "A fish with no eye is called a fsh.",
+            "People say nothing is impossible, but I do nothing every day.",
+            "Future depends on your dreams, so go to sleep.",
+            "I stepped on a cornflake and now I am a cereal killer.",
+            "Never trust an atom. They make up everything.",
+            "What happens if you get scared half to death twice?"
+        ],
+        "4.1": true,
+        "4.2": "zlCnffjbeq",
+        "4.3": [
+            "Cinderella",
+            "Lady and the Tramp",
+            "Old Yeller",
+            "Treasure Island",
+            "The Jungle Book"
+        ],
+        "4.4": "deb1536f480475f7d593219aa1afd74c",
+        "5.1": "ISO-8859-1",
+        "5.2": "18, 18",
+        "5.3": "18, 15",
+        "6.1": "1998-12-31 06:10:32",
+        "6.2": "And that was how a great scandal threatened to affect the kingdom of Bohemia, and how the best plans of Mr. Sherlock Holmes were beaten by a woman's wit. He used to make merry over the cleverness of women, but I have not heard him do it of late. And when he speaks of Irene Adler, or when he refers to her photograph, it is always under the honourable title of the woman."
+    }
+}

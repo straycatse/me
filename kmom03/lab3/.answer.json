@@ -1,0 +1,119 @@
+{
+    "details": "Generated for siso18 at 2018-09-27 19:41:57.",
+    "key": "ce8f2fa5e3d5677f4b4fa4a8b9546125",
+    "summary": {
+        "questions": 22,
+        "points": 26,
+        "pass": 20,
+        "passdistinct": 26
+    },
+    "points": {
+        "1.1": 1,
+        "1.2": 1,
+        "1.3": 1,
+        "1.4": 1,
+        "1.5": 1,
+        "2.1": 1,
+        "2.2": 1,
+        "2.3": 1,
+        "3.1": 1,
+        "3.2": 1,
+        "3.3": 1,
+        "3.4": 1,
+        "3.5": 1,
+        "3.6": 1,
+        "3.7": 1,
+        "3.8": 1,
+        "4.1": 1,
+        "4.2": 1,
+        "4.3": 1,
+        "5.1": 1,
+        "6.1": 3,
+        "6.2": 3
+    },
+    "answers": {
+        "1.1": "Bahamas",
+        "1.2": "United Kingdom = London, Bahamas = Nassau, Ukraine = Kiev",
+        "1.3": 296,
+        "1.4": [
+            285,
+            11,
+            9.75,
+            9,
+            "Kiev"
+        ],
+        "1.5": "United Kingdom-Ukraine",
+        "2.1": {
+            "United Kingdom": "London",
+            "Bahamas": "Nassau",
+            "Ukraine": "Kiev"
+        },
+        "2.2": {
+            "United Kingdom": "London",
+            "Bahamas": "Nassau",
+            "Ukraine": "Kiev",
+            "India": "New Delhi"
+        },
+        "2.3": "Kiev",
+        "3.1": 5,
+        "3.2": {
+            "4": 4998,
+            "0": 324,
+            "1": 36,
+            "2": 20.02,
+            "3": 8
+        },
+        "3.3": 4998,
+        "3.4": [
+            285,
+            11,
+            9.75,
+            9,
+            2216,
+            55.89
+        ],
+        "3.5": "United Kingdom",
+        "3.6": [
+            "Montana",
+            "Oregon",
+            "Bahamas",
+            "Ukraine"
+        ],
+        "3.7": [
+            4998,
+            8,
+            20.02,
+            36,
+            324
+        ],
+        "3.8": "London-Nassau-Kiev",
+        "4.1": [
+            23,
+            16,
+            58,
+            111,
+            17,
+            20,
+            69,
+            36,
+            16,
+            14
+        ],
+        "4.2": [
+            67,
+            43,
+            89,
+            55
+        ],
+        "4.3": "one=1,two=2,three=3,four=4,five=5",
+        "5.1": "Oceania",
+        "6.1": "Europe",
+        "6.2": [
+            9,
+            9.75,
+            11,
+            285,
+            2216
+        ]
+    }
+}
