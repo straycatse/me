@@ -16,7 +16,7 @@ body {
     float: left;
     width: 100%;
     padding: 15px;
-    height: 120px;
+    height: 150px;
     border-bottom: solid 3px #ce7b91;
 }
 
@@ -24,6 +24,7 @@ body {
  * Style the navbar
  */
 .navbar {
+    margin-top: 2.5%;
     width: 25%;
     float: right;
     list-style-type: none;
@@ -38,6 +39,7 @@ aside .selected {
 .logo-div {
     width: 25%;
     display: inline;
+    float: left;
 }
 
 /**

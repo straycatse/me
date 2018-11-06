@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <header class="site-header">
         <a href="home.php"><div class="logo-div">
-            <img src="img/logo.png" alt="logo" />
+            <img src="img/logo.png" alt="logo" /><br>
             <span class="site-slogan">Begravningsmuseum online</span>
         </div></a>
         <nav class="navbar">

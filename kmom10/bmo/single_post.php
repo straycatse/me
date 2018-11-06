@@ -17,6 +17,8 @@ require __DIR__ . "/config.php";
 // Include essential functions
 require __DIR__ . "/src/functions.php";
 
+$db = connectToDatabase($dsn);
+
 // Get what subpage to show, defaults to index
 $pageReference = $_GET["page"] ?? "index";
 
@@ -42,7 +44,44 @@ $page = $pages[$pageReference] ?? null;
 $title = $page["title"] ?? "404";
 $title .= " | BMO";
 
+
+if (isset($_GET['id'])) {
+	$post = getPost($_GET['id'], $db);
+}
+
 // Render the page
 require __DIR__ . "/view/header.php";
-require __DIR__ . "/view/articles.php";
-require __DIR__ . "/view/footer.php";
+?>
+<div class="container">
+	<div class="content" >
+		<!-- Page wrapper -->
+		<div class="post-wrapper">
+			<!-- full post div -->
+			<div class="full-post-div">
+				<h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
+				<div class="post-body-div">
+					<?php echo html_entity_decode($post[0]['content']); ?>
+				</div>
+			</div>
+			<!-- // full post div -->
+
+			<!-- comments section -->
+			<!--  coming soon ...  -->
+		</div>
+		<!-- // Page wrapper -->
+
+		<!-- post sidebar -->
+		<div class="post-sidebar">
+			<div class="card">
+				<div class="card-header">
+					<h2>Topics</h2>
+				</div>
+				<div class="card-content">
+				</div>
+			</div>
+		</div>
+		<!-- // post sidebar -->
+	</div>
+</div>
+
+<?php require __DIR__ . "/view/footer.php";?>

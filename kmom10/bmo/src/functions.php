@@ -23,3 +23,30 @@ function connectToDatabase($dsn)
 
      return $db;
 }
+
+function getPublishedPosts($db) {
+
+  // Prepare and execute the SQL statement
+  $stmt = $db->prepare("SELECT * FROM Article WHERE category = 'article'");
+  $stmt->execute();
+
+  // Get the results as an array with column names as array keys
+  $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $articles;
+}
+
+function getPost($id, $db){
+	// Get single post slug
+	$post_slug = $_GET['id'];
+  $stmt = $db->prepare("SELECT * FROM Article WHERE id = '$post_slug'");
+  $stmt->execute();
+
+	// fetch query results as associative array.
+	$post = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	// if ($post) {
+	// 	// get the topic to which this post belongs
+	// 	$post['topic'] = getPostTopic($post['id']);
+	// }
+	return $post;
+}

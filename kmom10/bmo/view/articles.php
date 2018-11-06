@@ -7,6 +7,27 @@
     $stmt = $db->prepare("SELECT * FROM Article WHERE category = 'article'");
     $stmt->execute();
 
+    $articles = getPublishedPosts($db);
+    ?>
+
+<?php foreach ($articles as $post): ?>
+  <article>
+	<div class="post">
+		<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
+		<a href="single_post.php?id=<?php echo $post['id']; ?>">
+			<div class="post_info">
+				<h1><?php echo $post['title'] ?></h1>
+				<div class="info">
+          <span><?php echo $post["author"]?>,</span><br>
+					<span><?php echo date("F j, Y ", strtotime($post["pubdate"])); ?></span><br>
+					<span class="read_more">Läs mer</span>
+				</div>
+			</div>
+		</a>
+	</div>
+</article>
+<?php endforeach ?>
+<?php
     // Get the results as an array with column names as array keys
     $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -26,12 +47,6 @@
         echo $contents[$i];
         echo "</article>";
     }
-    // echo "<article>";
-    // echo "<h1>" . $titles[0] . "</h1>";
-    // echo "<p>Publicerad " . $pubdates[0] . "</p>";
-    // echo "<i><p>" . $authors[0] . "</i></p>";
-    // print_r($contents[0]);
-    // echo "</article>";
 ?>
 </main>
 </div>
