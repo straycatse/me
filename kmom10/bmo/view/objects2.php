@@ -13,7 +13,7 @@
 <?php foreach ($objects as $object): ?>
   <article>
 	<div class="objectListing">
-    <a href="single_post.php?id=<?php echo $object['id']; ?>">
+    <a href="single_object.php?id=<?php echo $object['id']; ?>">
 		<img src="<?php echo 'img/250x250/' . $object['image']; ?>" class="post_image" alt="">
 			<div class="object_info">
 				<p><?php echo $object['title'] ?></p>
