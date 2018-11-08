@@ -27,26 +27,26 @@
 	</div>
 </article>
 <?php endforeach ?>
-<?php
+<!--<?php
     // Get the results as an array with column names as array keys
-    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $rows = null;
-    foreach ($res as $row) {
-        $titles[] = $row['title'];
-        $authors[] = $row['author'];
-        $contents[] = $row['content'];
-        $pubdates[] = $row['pubdate'];
-    }
-    $sumArticles = count($res);
-    for ($i=0; $i < $sumArticles; $i++) {
-        echo "<article>";
-        echo "<h1>" . $titles[$i] . "</h1>";
-        echo "<p>Publicerad " . $pubdates[$i] . "</p>";
-        echo "<i><p>" . $authors[$i] . "</i></p>";
-        echo $contents[$i];
-        echo "</article>";
-    }
-?>
+    // $rows = null;
+    // foreach ($res as $row) {
+        // $titles[] = $row['title'];
+        // $authors[] = $row['author'];
+        // $contents[] = $row['content'];
+        // $pubdates[] = $row['pubdate'];
+    // }
+    // $sumArticles = count($res);
+    // for ($i=0; $i < $sumArticles; $i++) {
+        // echo "<article>";
+        // echo "<h1>" . $titles[$i] . "</h1>";
+        // echo "<p>Publicerad " . $pubdates[$i] . "</p>";
+        // echo "<i><p>" . $authors[$i] . "</i></p>";
+        // echo $contents[$i];
+        // echo "</article>";
+    // }
+?>-->
 </main>
 </div>

@@ -36,6 +36,18 @@ function getPublishedPosts($db) {
 	return $articles;
 }
 
+function getPublishedObjects($db) {
+
+  // Prepare and execute the SQL statement
+  $stmt = $db->prepare("SELECT * FROM Object ");
+  $stmt->execute();
+
+  // Get the results as an array with column names as array keys
+  $objects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $objects;
+}
+
 function getPost($id, $db){
 	// Get single post slug
 	$post_slug = $_GET['id'];
@@ -49,4 +61,19 @@ function getPost($id, $db){
 	// 	$post['topic'] = getPostTopic($post['id']);
 	// }
 	return $post;
+}
+
+function getObject($id, $db){
+	// Get single post slug
+	$post_slug = $_GET['id'];
+  $stmt = $db->prepare("SELECT * FROM Object WHERE id = '$post_slug'");
+  $stmt->execute();
+
+	// fetch query results as associative array.
+	$object = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	// if ($post) {
+	// 	// get the topic to which this post belongs
+	// 	$post['topic'] = getPostTopic($post['id']);
+	// }
+	return $object;
 }

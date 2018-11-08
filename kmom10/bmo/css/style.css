@@ -65,7 +65,7 @@ main {
     /* border: 10px solid hsl(133, 100%, 76%); */
 }
 
-article {
+.post {
     border-top: solid 3px #ce7b91;
     margin-bottom: 30px;
     padding-top: 1em;
@@ -110,4 +110,10 @@ aside {
 
 h1 {
     /* border-bottom: 1px solid #999; */
+}
+
+.objectListing {
+  width: 50%;
+  float: left;
+  min-height: 350px;
 }
