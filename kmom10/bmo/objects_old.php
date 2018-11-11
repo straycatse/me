@@ -44,5 +44,5 @@ $title .= " | BMO";
 
 // Render the page
 require __DIR__ . "/view/header.php";
-require __DIR__ . "/view/objects2.php";
+require __DIR__ . "/view/objects.php";
 require __DIR__ . "/view/footer.php";
