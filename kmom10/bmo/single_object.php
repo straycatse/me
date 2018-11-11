@@ -58,7 +58,7 @@ require __DIR__ . "/view/header.php";
 		<div class="post-wrapper">
 			<!-- full post div -->
 			<div class="full-post-div">
-        <img src="<?php echo 'img/250x250/' . $post[0]['image']; ?>" class="post_image" alt="">
+        <a href="<?php echo 'img/full-size/' . $post[0]['image']; ?>"><img src="<?php echo 'img/250x250/' . $post[0]['image']; ?>" class="post_image" alt=""></a>
 				<h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
 				<div class="post-body-div">
 					<?php echo html_entity_decode($post[0]['text']); ?>
