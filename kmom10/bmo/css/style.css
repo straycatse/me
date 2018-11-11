@@ -109,7 +109,7 @@ h1 {
 }
 
 .objectListing {
-  width: 50%;
-  float: left;
-  min-height: 350px;
+    width: 50%;
+    float: left;
+    min-height: 350px;
 }

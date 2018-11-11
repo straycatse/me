@@ -46,42 +46,33 @@ $title .= " | BMO";
 
 
 if (isset($_GET['id'])) {
-	$post = getPost($_GET['id'], $db);
+    $post = getPost($_GET['id'], $db);
 }
 
 // Render the page
 require __DIR__ . "/view/header.php";
 ?>
 <div class="container">
-	<div class="content" >
-		<!-- Page wrapper -->
-		<div class="post-wrapper">
-			<!-- full post div -->
-			<div class="full-post-div">
-				<h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
-				<div class="post-body-div">
-					<?php echo html_entity_decode($post[0]['content']); ?>
-				</div>
-			</div>
-			<!-- // full post div -->
-
-			<!-- comments section -->
-			<!--  coming soon ...  -->
-		</div>
-		<!-- // Page wrapper -->
-
-		<!-- post sidebar -->
-		<div class="post-sidebar">
-			<div class="card">
-				<div class="card-header">
-					<h2>Topics</h2>
-				</div>
-				<div class="card-content">
-				</div>
-			</div>
-		</div>
-		<!-- // post sidebar -->
-	</div>
+  <div class="content">
+    <div class="post-wrapper">
+      <div class="full-post-div">
+        <h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
+        <div class="post-body-div">
+            <?php echo html_entity_decode($post[0]['content']); ?>
+        </div>
+      </div>
+    </div>
+    <div class="post-sidebar">
+      <div class="card">
+        <div class="card-header">
+          <h2>Topics</h2>
+        </div>
+        <div class="card-content">
+        </div>
+      </div>
+    </div>
+    <!-- // post sidebar -->
+  </div>
 </div>
 
 <?php require __DIR__ . "/view/footer.php";?>

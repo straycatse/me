@@ -46,45 +46,35 @@ $title .= " | BMO";
 
 
 if (isset($_GET['id'])) {
-	$post = getObject($_GET['id'], $db);
+    $post = getObject($_GET['id'], $db);
 }
 
 // Render the page
 require __DIR__ . "/view/header.php";
 ?>
 <div class="wrap-main">
-	<main>
+  <main>
     <article>
-		<!-- Page wrapper -->
-		<div class="post-wrapper">
-			<!-- full post div -->
-			<div class="full-post-div">
-        <a href="<?php echo 'img/full-size/' . $post[0]['image']; ?>"><img src="<?php echo 'img/250x250/' . $post[0]['image']; ?>" class="post_image" alt=""></a>
-				<h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
-				<div class="post-body-div">
-					<?php echo html_entity_decode($post[0]['text']); ?>
-				</div>
-			</div>
-			<!-- // full post div -->
-
-			<!-- comments section -->
-			<!--  coming soon ...  -->
-		</div>
-		<!-- // Page wrapper -->
-
-		<!-- post sidebar -->
-		<div class="post-sidebar">
-			<div class="card">
-				<div class="card-header">
-					<h4>Relaterade objekt</h4>
-				</div>
-				<div class="card-content">
-				</div>
-			</div>
-		</div>
-		<!-- // post sidebar -->
+      <div class="post-wrapper">
+        <div class="full-post-div">
+          <a href="<?php echo 'img/full-size/' . $post[0]['image']; ?>"><img src="<?php echo 'img/250x250/' . $post[0]['image']; ?>" class="post_image" alt=""></a>
+          <h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
+          <div class="post-body-div">
+            <?php echo html_entity_decode($post[0]['text']); ?>
+          </div>
+        </div>
+      </div>
+      <div class="post-sidebar">
+        <div class="card">
+          <div class="card-header">
+            <h4>Relaterade objekt</h4>
+          </div>
+          <div class="card-content">
+          </div>
+        </div>
+      </div>
     </article>
-	</main>
+  </main>
 </div>
 
 <?php require __DIR__ . "/view/footer.php";?>
