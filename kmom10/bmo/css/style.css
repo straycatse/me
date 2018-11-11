@@ -71,10 +71,6 @@ main {
     padding-top: 1em;
 }
 
-article:first-child {
-    border-top: none;
-}
-
 .objArt,
 .objArt:first-child {
     width: 50%;

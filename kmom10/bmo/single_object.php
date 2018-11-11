@@ -52,8 +52,9 @@ if (isset($_GET['id'])) {
 // Render the page
 require __DIR__ . "/view/header.php";
 ?>
-<div class="container">
-	<div class="content" >
+<div class="wrap-main">
+	<main>
+    <article>
 		<!-- Page wrapper -->
 		<div class="post-wrapper">
 			<!-- full post div -->
@@ -74,16 +75,16 @@ require __DIR__ . "/view/header.php";
 		<!-- post sidebar -->
 		<div class="post-sidebar">
 			<div class="card">
-        <a href=""><p>Nästa objekt</p></a>
 				<div class="card-header">
-					<h2>Topics</h2>
+					<h4>Relaterade objekt</h4>
 				</div>
 				<div class="card-content">
 				</div>
 			</div>
 		</div>
 		<!-- // post sidebar -->
-	</div>
+    </article>
+	</main>
 </div>
 
 <?php require __DIR__ . "/view/footer.php";?>
