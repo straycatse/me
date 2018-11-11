@@ -74,6 +74,7 @@ require __DIR__ . "/view/header.php";
 		<!-- post sidebar -->
 		<div class="post-sidebar">
 			<div class="card">
+        <a href=""><p>Nästa objekt</p></a>
 				<div class="card-header">
 					<h2>Topics</h2>
 				</div>
