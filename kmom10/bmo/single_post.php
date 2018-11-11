@@ -52,8 +52,9 @@ if (isset($_GET['id'])) {
 // Render the page
 require __DIR__ . "/view/header.php";
 ?>
-<div class="container">
-  <div class="content">
+<div class="wrap-main">
+  <main>
+    <article>
     <div class="post-wrapper">
       <div class="full-post-div">
         <h2 class="post-title"><?php echo $post[0]['title']; ?></h2>
@@ -71,8 +72,9 @@ require __DIR__ . "/view/header.php";
         </div>
       </div>
     </div>
+  </article>
     <!-- // post sidebar -->
-  </div>
+  </main>
 </div>
 
 <?php require __DIR__ . "/view/footer.php";?>
