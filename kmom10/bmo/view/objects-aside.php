@@ -1,15 +1,14 @@
 <aside>
     <nav>
-        <ul class="list-unstyled">
-        <?php foreach ($pages as $key => $value) : ?>
-                <?php if (isset($value["title"])) :
-                    $class = null;
-                    if ($pageReference === $key) {
-                        $class = "class=\"selected\"";
-                    } ?>
-               <li><i class="<?= $pageReference == $key?>"></i><a <?= $class ?> href="?page=<?= $key ?>"><?= $value["title"] ?></a></li>
-            <?php endif; ?>
-            <?php endforeach; ?>
+      <ul class="list-unstyled">
+        <h3>Samtliga objekt</h3>
+        <?php foreach ($objects as $object) : ?>
+              <div class="objectAside">
+                <a href="single_object.php?id=<?php echo $object['id']; ?>">
+                    <p><?php echo $object['title'] ?></p>
+                </a>
+              </div>
+          <?php endforeach ?>
         </ul>
     </nav>
 </aside>

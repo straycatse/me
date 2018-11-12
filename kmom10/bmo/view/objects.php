@@ -26,4 +26,5 @@
 </article>
 <?php endforeach ?>
 </main>
+<?php require __DIR__ . "/objects-aside.php" ?>
 </div>

@@ -62,6 +62,8 @@ require __DIR__ . "/view/header.php";
           <div class="post-body-div">
             <?php echo html_entity_decode($post[0]['text']); ?>
           </div>
+          <br>
+          <a href="objects.php"><button class="btn btn-primary">Tillbaka</button></a>
         </div>
       </div>
     </article>
