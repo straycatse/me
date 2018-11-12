@@ -18,7 +18,7 @@
       <div class="object_info">
         <p><?php echo $object['title'] ?></p>
         <div class="info">
-          <span class="read_more">Läs mer</span>
+          <button class="btn btn-primary">Läs mer</button>
         </div>
       </div>
     </a>

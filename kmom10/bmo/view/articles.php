@@ -20,7 +20,7 @@
         <div class="info">
           <span><?php echo $post["author"]?>,</span><br>
           <span><?php echo date("F j, Y ", strtotime($post["pubdate"])); ?></span><br>
-          <span class="read_more">Läs mer</span>
+          <button class="btn btn-primary">Läs mer</button>
         </div>
       </div>
     </a>
