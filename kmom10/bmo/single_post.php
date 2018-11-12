@@ -63,15 +63,6 @@ require __DIR__ . "/view/header.php";
         </div>
       </div>
     </div>
-    <div class="post-sidebar">
-      <div class="card">
-        <div class="card-header">
-          <h2>Topics</h2>
-        </div>
-        <div class="card-content">
-        </div>
-      </div>
-    </div>
   </article>
     <!-- // post sidebar -->
   </main>

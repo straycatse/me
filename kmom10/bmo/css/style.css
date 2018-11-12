@@ -11,30 +11,27 @@ body {
     max-width: 100%;
 }
 
-.site-header {
+/* .site-header {
     background-color: #dbfcff;
     float: left;
     width: 100%;
     padding: 15px;
     height: 150px;
     border-bottom: solid 3px #ce7b91;
-}
+} */
 
 /**
  * Style the navbar
  */
 .navbar {
-    margin-top: 2.5%;
-    width: 25%;
-    float: right;
-    list-style-type: none;
+    border-bottom: 1px solid #a9a9a9;
 }
 
-.navbar .selected,
+/* .navbar .selected,
 aside .selected {
     font-weight: bold;
     color: #000;
-}
+} */
 
 .logo-div {
     width: 25%;
@@ -42,13 +39,27 @@ aside .selected {
     float: left;
 }
 
+a,
+a:hover {
+    color: #e6467d;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e6467d;
+}
+
+.btn-primary {
+    background-color: #e6467d;
+    border-color: #e6467d;
+}
+
 /**
  * Style for page controller multipage
  */
 .wrap-main {
-    background-color: #dbfcff;
+    background-color: #f8f9fa;
     overflow: auto;
-    border: 1px solid #dbfcff;
+    border: 1px solid #f8f9fa;
     min-height: 80vh;
 }
 
@@ -66,34 +77,33 @@ main {
 }
 
 .art-post {
-    border-top: solid 3px #ce7b91;
+    border-top: solid 1px #a9a9a9;
     margin-bottom: 30px;
     padding-top: 1em;
 }
 
 .art-post:first-child {
-  border-top: none;
+    border-top: none;
 }
 
-.post a, .post a:hover {
+.post a,
+.post a:hover,
+.objectListing a,
+.objectListing:first-child {
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 
 .post button {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .objArt,
 .objArt:first-child {
     width: 50%;
     min-height: 30em;
-    border-top: solid 3px #ce7b91;
+    border-top: solid 1px #a9a9a9;
     float: left;
-}
-
-pre {
-    /* white-space: pre-wrap; */
 }
 
 aside {
@@ -112,9 +122,9 @@ aside {
     text-align: center;
 
     /* border: 10px solid #ffdfba; */
-    background-color: #dbfcff;
+    background-color: #f0f0f0;
     color: #000;
-    border-top: solid 3px #ce7b91;
+    border-top: solid 1px #a9a9a9;
 }
 
 h1 {

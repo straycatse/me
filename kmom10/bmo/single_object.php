@@ -64,15 +64,6 @@ require __DIR__ . "/view/header.php";
           </div>
         </div>
       </div>
-      <div class="post-sidebar">
-        <div class="card">
-          <div class="card-header">
-            <h4>Relaterade objekt</h4>
-          </div>
-          <div class="card-content">
-          </div>
-        </div>
-      </div>
     </article>
   </main>
 </div>
