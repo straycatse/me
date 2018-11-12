@@ -8,7 +8,7 @@
                     <p><?php echo $object['title'] ?></p>
                 </a>
               </div>
-          <?php endforeach ?>
+            <?php endforeach ?>
         </ul>
     </nav>
 </aside>
