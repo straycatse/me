@@ -1,5 +1,5 @@
 <div class="wrap-main">
-    <main>
+  <main>
     <?php
     $db = connectToDatabase($dsn);
 
@@ -11,7 +11,7 @@
     ?>
 
 <?php foreach ($articles as $post) : ?>
-<article>
+<article class="art-post">
   <div class="post">
     <img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
     <a href="single_post.php?id=<?php echo $post['id']; ?>">

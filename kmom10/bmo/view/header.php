@@ -17,11 +17,19 @@
             <img src="img/logo.png" alt="logo" /><br>
             <span class="site-slogan">Begravningsmuseum online</span>
         </div></a>
-        <nav class="navbar">
-            <a class="<?= basename($_SERVER['PHP_SELF']) == "home.php" ? "selected" : ""; ?>" href="home.php">Hem</a>
-            <a class="<?= basename($_SERVER['PHP_SELF']) == "objects.php" ? "selected" : ""; ?>" href="objects.php">Objekt</a>
-            <a class="<?= basename($_SERVER['PHP_SELF']) == "articles.php" ? "selected" : ""; ?>" href="articles.php">Artiklar</a>
-            <a class="<?= basename($_SERVER['PHP_SELF']) == "about.php" ? "selected" : ""; ?>" href="about.php">Om BMO</a>
-        </nav>
+        <ul class="nav nav-tabs justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == "home.php" ? "active" : ""; ?>" href="home.php">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == "objects.php" ? "active" : ""; ?>" href="objects.php">Objekt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == "articles.php" ? "active" : ""; ?>" href="articles.php">Artiklar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == "about.php" ? "active" : ""; ?>" href="about.php">Om BMO</a>
+          </li>
+        </ul>
     </header>
     <!-- <main> -->

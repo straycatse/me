@@ -65,10 +65,23 @@ main {
     /* border: 10px solid hsl(133, 100%, 76%); */
 }
 
-.post {
+.art-post {
     border-top: solid 3px #ce7b91;
     margin-bottom: 30px;
     padding-top: 1em;
+}
+
+.art-post:first-child {
+  border-top: none;
+}
+
+.post a, .post a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+.post button {
+  margin-top: 25px;
 }
 
 .objArt,
