@@ -25,15 +25,15 @@ $pageReference = $_GET["page"] ?? "index";
 // Get the filename of this multipage, exkluding the file suffix of .php
 $base = basename(__FILE__, ".php");
 
+if (isset($_GET['id'])) {
+    $post = getPost($_GET['id'], $db);
+}
+
 // Create the collection of valid sub pages.
 $pages = [
     "index" => [
-        "title" => "Vad är BMO?",
+        "title" => $post[0]['title'],
         "file" => __DIR__ . "/$base/index.php",
-    ],
-    "contact" => [
-        "title" => "Kontakta BMO",
-        "file" => __DIR__ . "/$base/contact.php",
     ],
 ];
 
@@ -43,11 +43,6 @@ $page = $pages[$pageReference] ?? null;
 // Base title for all pages and add title from selected multipage
 $title = $page["title"] ?? "404";
 $title .= " | BMO";
-
-
-if (isset($_GET['id'])) {
-    $post = getPost($_GET['id'], $db);
-}
 
 // Render the page
 require __DIR__ . "/view/header.php";

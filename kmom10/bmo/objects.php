@@ -26,12 +26,8 @@ $base = basename(__FILE__, ".php");
 // Create the collection of valid sub pages.
 $pages = [
     "index" => [
-        "title" => "Vad är BMO?",
+        "title" => "Objekt",
         "file" => __DIR__ . "/$base/index.php",
-    ],
-    "contact" => [
-        "title" => "Kontakta BMO",
-        "file" => __DIR__ . "/$base/contact.php",
     ],
 ];
 
