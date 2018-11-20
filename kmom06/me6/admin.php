@@ -1,56 +1,67 @@
 <?php
-/**
- * This is a page controller for a multipage. You should name this file
- * as the name of the pagecontroller for this multipage. You should then
- * add a directory with the same name, excluding the file suffix of ".php".
- * You then then have several multipages within the same directory, like this.
- *
- * multipage.php
- * multipage/
- *
- * some-test-page.php
- * some-test-page/
- */
- // Include the configuration file
- require __DIR__ . "/config.php";
+// Include the configuration file
+require __DIR__ . "/config.php";
+// Include essential functions
+require __DIR__ . "/src/functions.php";
+// Set common variables, these are exposed to the view template files
 
- // Include essential functions
- require __DIR__ . "/src/functions.php";
+// Include the page header through the view template file
 
-// Get what subpage to show, defaults to index
-$pageReference = $_GET["page"] ?? "index";
+$db = connectToDatabase($dsn2);
 
-// Get the filename of this multipage, exkluding the file suffix of .php
-$base = basename(__FILE__, ".php");
+//$subpage = __DIR__ . "/view/$page.php";
 
-// Create the collection of valid sub pages.
+$page = $_GET["page"] ?? "write_admin";
 $pages = [
-    "admin" => [
-        "title" => "Visa databasinfo",
-        "file" => __DIR__ . "/$base/admin.php",
+    "write_admin" => [
+        "title" => "Info om session",
+        "subpage" => __DIR__ . "/view/$page.php"
     ],
     "admin_create" => [
-        "title" => "Lägg till ny databasrad",
-        "file" => __DIR__ . "/$base/admin_create.php",
+        "title" => "Lägg till",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "admin_process" => [
+        "title" => "Processar ny rad",
+        "subpage" => __DIR__ . "/view/$page.php"
     ],
     "admin_update" => [
-        "title" => "Uppdatera databasrad",
-        "file" => __DIR__ . "/$base/admin_update.php",
+        "title" => "Uppdatera en rad",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "admin_update_process" => [
+        "title" => "Processar uppdateringen av en rad",
+        "subpage" => __DIR__ . "/view/$page.php"
     ],
     "admin_delete" => [
-        "title" => "Ta bort databasrad",
-        "file" => __DIR__ . "/$base/admin_delete.php",
+        "title" => "Radera en rad",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "admin_delete_process" => [
+        "title" => "Processerar raderingen av en rad",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "admin_init" => [
+        "title" => "Töm och återinitiera databasen",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "contact_post-result" => [
+        "title" => "Kontakt",
+        "subpage" => __DIR__ . "/view/$page.php"
+    ],
+    "stylechooser" => [
+        "title" => "Stylechooser",
+        "subpage" => __DIR__ . "/view/$page.php"
     ],
 ];
 
-// Get the current page from the $pages collection, if it matches
-$page = $pages[$pageReference] ?? null;
+$validPage = $pages[$page] ?? null;
+if (!$validPage) {
+    die("Nej. Ut.");
+}
 
-// Base title for all pages and add title from selected multipage
-$title = $page["title"] ?? "404";
-$title .= " | Test multipage";
-
-// Render the page
+$title = "{$validPage["title"]}" . $baseTitle;
+$subpage = $validPage["subpage"];
 require __DIR__ . "/view/header.php";
-require __DIR__ . "/view/admin.php";
+require __DIR__ . "/view/admin_multi.php";
 require __DIR__ . "/view/footer.php";

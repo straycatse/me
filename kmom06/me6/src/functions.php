@@ -100,6 +100,7 @@ function printWebsitesResultsetToHTMLTable($res)
     foreach ($res as $row) {
         $rows .= "<tr>";
         $rows .= "<td>{$row['id']}</td>";
+        $rows .= "<td>{$row['name']}</td>";
         $rows .= "<td>{$row['site']}</td>";
         $rows .= "<td>{$row['url']}</td>";
         $rows .= "<td>{$row['date']}</td>";
@@ -111,6 +112,7 @@ function printWebsitesResultsetToHTMLTable($res)
     <table>
     <tr>
         <th>ID</th>
+        <th>name</th>
         <th>site</th>
         <th>url</th>
         <th>date</th>
