@@ -165,3 +165,11 @@ article {
 .byline p {
     width: auto;
 }
+
+table {
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
