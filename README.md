@@ -12,6 +12,8 @@
 
 *Sammantaget blir kursen en grundlig introduktion och orientering i de tekniker som ofta används för att skapa webbplatser.*
 
+## Innehåll
+
 Kursen omfattar följande områden:
 
 - HTML och HTML5. Element och dess uppbyggnad och användning. Valideringsverktyg.
