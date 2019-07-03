@@ -13,7 +13,6 @@
 *Sammantaget blir kursen en grundlig introduktion och orientering i de tekniker som ofta används för att skapa webbplatser.*
 
 ## Innehåll
-
 Kursen omfattar följande områden:
 
 - HTML och HTML5. Element och dess uppbyggnad och användning. Valideringsverktyg.
@@ -22,3 +21,15 @@ Kursen omfattar följande områden:
 - SQL och den filbaserade relationsdatabasen SQLite tillsammans med PHP Data Objekt.
 - Strukturerad utveckling av webbapplikationer där synen på struktur, ordning och reda påverkar hur vi utvecklar vår webbapplikation.
 - Användning, i mindre omfattning, av verktyg och tekniker som lämpar sig för utveckling av webbapplikationer, tex egen webbserver för utveckling och test, UNIX/Linux, installation på extern webbserver för drift, ssh, ftp/sftp
+
+## Kunskap och förståelse
+Efter genomförd kurs skall studenten:
+
+- påvisa grundläggande kunskaper om webbutveckling med HTML, CSS, PHP och SQL, genom att skriftligt beskriva och sammanfatta erfarenheter och observationer från övningar och projekt.
+- påvisa grundläggande kunskaper i att använda HTML, CSS, PHP samt SQL genom att tillämpa dem i praktiska övningar och projekt.
+
+## Färdighet och förmåga
+Efter genomförd kurs skall studenten:
+
+- självständigt, utefter en specifikation, kunna utveckla och driftsätta en webbplatts med HTML, CSS, PHP och SQL.
+- ha god praktisk förmåga att hantera de verktyg och miljöer som används vid utveckling av databasdrivna webbapplikationer.
