@@ -1,6 +1,6 @@
 # me-site
 
-##Mina uppgifter för kursen htmlphp på Blekinge Tekniska Högskola hösten 2018.
+## Mina uppgifter för kursen htmlphp på Blekinge Tekniska Högskola hösten 2018.
 
 *Kursen Webbteknologier, a.k.a. htmlphp, lär ut webbutveckling där teknikerna HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.*
 
