@@ -1,5 +1,7 @@
 # Webbteknologier på BTH
 
+## Slutuppgiften kmom10 går att se live på: http://bmo.straycat.nu/home.php
+
 ## Mina uppgifter för kursen htmlphp på Blekinge Tekniska Högskola hösten 2018.
 
 *Kursen Webbteknologier, a.k.a. htmlphp, lär ut webbutveckling där teknikerna HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.*
